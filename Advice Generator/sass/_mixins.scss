@@ -1,0 +1,19 @@
+@mixin flex($direction, $align, $justify){
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin responsive($screenWidth) {
+  @media(max-width: $screenWidth) {
+    @content;
+  }
+}
+
+@mixin animate($name, $duration, $iteration, $timing){
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-iteration-count: $iteration;
+  animation-timing-function: $timing;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./images/favicon-32x32.png">
+
+  <!-- Primary Meta Tags -->
+  <title>Random Advice Generator!</title>
+  <meta name="title" content="Random Advice Generator!">
+  <meta name="description" content="Get randomly generated advice!">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fe-mentor-random-advice-generator.netlify.app/">
+  <meta property="og:title" content="Random Advice Generator!">
+  <meta property="og:description" content="Get randomly generated advice!">
+  <meta property="og:image" content="./design/desktop-preview.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://fe-mentor-random-advice-generator.netlify.app/">
+  <meta property="twitter:title" content="Random Advice Generator!">
+  <meta property="twitter:description" content="Get randomly generated advice!">
+  <meta property="twitter:image" content="./design/desktop-preview.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./sass/main.css">
+  <title>Random Advice Generator</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="title active" id="title">
+
+      </div>
+      <div class="advice active" id="advice">
+      </div>      
+      <div class="pause">
+        <img class="desktop" src="./images/pattern-divider-desktop.svg" alt="">
+        <img class="mobile" src="./images/pattern-divider-mobile.svg" alt="">
+      </div>
+      <div class="dice">
+        <button class="btn" id="btn-dice" onclick="fetchAdvice()">
+          <img src="./images/icon-dice.svg" alt="">
+        </button>
+      </div>
+
+    </div>
+  </div>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>

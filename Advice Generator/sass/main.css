@@ -1,0 +1,210 @@
+body {
+  position: fixed;
+  overflow-y: scroll;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  cursor: default;
+}
+
+a {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  background-color: hsl(218deg, 23%, 16%);
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.container {
+  background-color: hsl(218deg, 23%, 16%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: hsl(217deg, 19%, 24%);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 332px;
+  border-radius: 10px;
+  width: 100%;
+  margin-left: 450px;
+  margin-right: 450px;
+  margin-top: 223px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+.card .title {
+  transition: all 0.3s;
+  margin-bottom: -2px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+.card .title.active {
+  -webkit-animation: fadeLeft 0.6s linear;
+          animation: fadeLeft 0.6s linear;
+}
+.card .advice p {
+  height: 100%;
+  padding: 0 52px;
+  opacity: 0.6s;
+}
+.card .advice.active {
+  -webkit-animation: fadeIn 0.9s linear;
+          animation: fadeIn 0.9s linear;
+}
+.card .pause {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.card .pause .desktop {
+  margin-top: 38px;
+}
+.card .pause .mobile {
+  display: none;
+}
+.card .dice {
+  width: 100%;
+  height: 100%;
+  max-height: 64px;
+  bottom: -32px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .dice button {
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+  height: 100%;
+  max-width: 64px;
+  background-color: hsl(150deg, 100%, 66%);
+  border-radius: 50%;
+}
+.card .dice button img {
+  margin: 31.25%;
+  cursor: pointer;
+}
+.card .dice button:hover {
+  box-shadow: 0px 0px 19px 4px rgba(45, 255, 196, 0.7);
+}
+@media (max-width: 375px) {
+  .card {
+    margin: 120px 4.26% 0 4.26%;
+  }
+  .card .title {
+    height: 80px;
+  }
+  .card .title h2 {
+    margin-bottom: -12px;
+  }
+  .card .advice {
+    margin-bottom: 24px;
+  }
+  .card .advice p {
+    padding: 0 27px;
+  }
+  .card .pause {
+    margin-bottom: 66px;
+  }
+  .card .pause .desktop {
+    display: none;
+  }
+  .card .pause .mobile {
+    display: initial;
+  }
+}
+
+h2 {
+  color: hsl(150deg, 100%, 66%);
+  margin-top: 16px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 400;
+}
+@media (max-width: 375px) {
+  h2 {
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: 3.5px;
+    font-size: 11px;
+  }
+}
+
+p {
+  font-size: 28px;
+  text-align: center;
+  color: hsl(193deg, 38%, 86%);
+}
+@media (max-width: 375px) {
+  p {
+    font-size: 24.5px;
+  }
+}/*# sourceMappingURL=main.css.map */
